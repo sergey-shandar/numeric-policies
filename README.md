@@ -1,4 +1,4 @@
-# numeric-policies
+# Numeric.Policies
 
 Numeric Policies for C#
 
