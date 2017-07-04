@@ -10,7 +10,7 @@ namespace NumericPolicies
         public double Div(double a, double b)
             => a / b;
 
-        public double FromLong(long v)
+        public double FromInt64(long v)
             => v;
 
         public double Multiply(double a, double b)

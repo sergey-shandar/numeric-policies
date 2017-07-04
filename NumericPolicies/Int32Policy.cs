@@ -2,7 +2,7 @@
 
 namespace NumericPolicies
 {
-    public struct IntPolicy : INumericPolicy<int>
+    public struct Int32Policy : INumericPolicy<int>
     {
         public int Add(int a, int b)
             => a + b;
@@ -10,7 +10,7 @@ namespace NumericPolicies
         public int Div(int a, int b)
             => a / b;
 
-        public int FromLong(long v)
+        public int FromInt64(long v)
             => (int)v;
 
         public int Multiply(int a, int b)

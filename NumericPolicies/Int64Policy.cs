@@ -1,6 +1,6 @@
 ﻿namespace NumericPolicies
 {
-    public struct LongPolicy : INumericPolicy<long>
+    public struct Int64Policy : INumericPolicy<long>
     {
         public long Add(long a, long b)
             => a + b;
@@ -8,7 +8,7 @@
         public long Div(long a, long b)
             => a / b;
 
-        public long FromLong(long v)
+        public long FromInt64(long v)
             => v;
 
         public long Multiply(long a, long b)

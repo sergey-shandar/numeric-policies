@@ -12,7 +12,7 @@
 
         public static Numeric<T, P> ToNumeric<T, P>(this long v)
             where P : struct, INumericPolicy<T>
-            => default(P).FromLong(v).Numeric<T, P>();
+            => default(P).FromInt64(v).Numeric<T, P>();
 
         public static MomentList1<T, P> MomentList1<T, P>(this Numeric<T, P> value, long count)
             where P : struct, INumericPolicy<T>
