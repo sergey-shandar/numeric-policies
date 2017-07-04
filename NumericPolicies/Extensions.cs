@@ -2,13 +2,17 @@
 {
     public static class NumericExtensions
     {
-        public static Numeric<T, P> Numeric<T, P>(this T value, P _ = default(P))
+        public static Numeric<T, P> Numeric<T, P>(this T value, P _)
             where P : struct, INumericPolicy<T>
             => new Numeric<T, P>(value);
 
-        public static Numeric<T, P> ToNumeric<T, P>(this long v, P _ = default(P))
+        public static Numeric<T, P> Numeric<T, P>(this T value)
             where P : struct, INumericPolicy<T>
-            => _.FromLong(v).Numeric(default(P));
+            => new Numeric<T, P>(value);
+
+        public static Numeric<T, P> ToNumeric<T, P>(this long v)
+            where P : struct, INumericPolicy<T>
+            => default(P).FromLong(v).Numeric<T, P>();
 
         public static MomentList1<T, P> MomentList1<T, P>(this Numeric<T, P> value, long count)
             where P : struct, INumericPolicy<T>
