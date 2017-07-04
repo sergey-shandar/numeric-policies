@@ -1,6 +1,6 @@
 ﻿namespace NumericPolicies
 {
-    struct LongPolicy : INumericPolicy<long>
+    public struct LongPolicy : INumericPolicy<long>
     {
         public long Add(long a, long b)
             => a + b;
