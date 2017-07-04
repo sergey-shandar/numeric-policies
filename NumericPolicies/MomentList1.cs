@@ -14,9 +14,9 @@
         }
 
         public MomentList1<T, P> Add(MomentList1<T, P> b)
-            => new P().ToMomentList1(new P().Add(Sum, b.Sum), Count + b.Count);
+            => default(P).ToMomentList1(default(P).Add(Sum, b.Sum), Count + b.Count);
 
         public T Average
-            => new P().Div(Sum, new P().FromLong(Count));
+            => default(P).Div(Sum, default(P).FromLong(Count));
     }
 }
