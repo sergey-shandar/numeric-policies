@@ -13,6 +13,8 @@
     <RepositoryUrl>https://github.com/sergey-shandar/numeric-policies</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>numeric</PackageTags>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <ItemGroup>
